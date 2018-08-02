@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteNo2]">
+  <parameter name="app" value="softvision"/>
+  <parameter name="platform" value="mobileE"/>
+  <test thread-count="5" name="TestName1(failed)">
+    <classes>
+      <class name="test.sv.MobileSearchTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="testSearch"/>
+          <include name="tearDown"/>
+          <include name="initialSet"/>
+        </methods>
+      </class> <!-- test.sv.MobileSearchTest -->
+      <class name="test.sv.MobileHamburgerMenuTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="testHamburgerMenu"/>
+          <include name="initialSet"/>
+        </methods>
+      </class> <!-- test.sv.MobileHamburgerMenuTest -->
+    </classes>
+  </test> <!-- TestName1(failed) -->
+</suite> <!-- Failed suite [SuiteNo2] -->
